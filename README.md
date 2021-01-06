@@ -16,7 +16,7 @@ By default, the application should be loaded on `localhost:8080`. It should prov
 * Remove container: `docker kill {container_id}` where `container_id` can be retrieved by running `docker ps` and found under the column `CONTAINER ID`
 
 `kubectl apply -f deployment.yaml`
-`kubectl apply -f deployment.yaml`
+`kubectl apply -f service.yaml`
 `kubectl get pods`
 `kubectl get services`
 `kubectl describe services`
