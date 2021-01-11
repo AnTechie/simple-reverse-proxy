@@ -15,10 +15,10 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t simple-reverse-proxy .
-  - docker tag simple-reverse-proxy dockertanj/simple-reverse-proxy:latest
+  - docker build -t simple-reverse-proxy1 .
+  - docker tag simple-reverse-proxy1 dockertanj/simple-reverse-proxy1:latest
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push dockertanj/simple-reverse-proxy
+  - docker push dockertanj/simple-reverse-proxy1
 

@@ -2,18 +2,18 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    service: reverseproxy
-  name: reverseproxy
+    service: reverseproxy1
+  name: reverseproxy1
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        service: reverseproxy
+        service: reverseproxy1
     spec:
       containers:
-      - image: dockertanj/simple-reverse-proxy
-        name: reverseproxy
+      - image: dockertanj/simple-reverse-proxy1
+        name: reverseproxy1
         imagePullPolicy: Always          
         resources:
           requests:
